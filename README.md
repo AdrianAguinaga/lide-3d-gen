@@ -31,3 +31,4 @@ evals/                            casos para evaluar el skill (REQUIREMENTS v3 Â
 | Modelo | Fuente | Partes | TriÃ¡ngulos | Materiales |
 |---|---|---|---|---|
 | `heli-rotor` (HeliRotor) | procedural | 62 | 12 356 | 7 |
+| `lab-table` (LabTable) | procedural | 4 | 680 | 4 |

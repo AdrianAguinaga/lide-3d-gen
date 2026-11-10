@@ -29,7 +29,7 @@ For 2–3: save the file to `models/<name>/source/` and load it in `build.py` wi
 - New model: copy `templates/model/` to `models/<name>/`, fill `model.toml`.
 - Live (iterate): `execute_blender_code` with
   `import runpy, sys; sys.argv = ["", "--", r"<abs>/models/<name>", "--no-export"]; runpy.run_path(r"<abs>/scripts/build.py")`
-  then `look` (`mode="angles"`, small `max_size`). Re-run freely: only the model's collection is rebuilt.
+  then `look` (`mode="angles"`, small `max_size`; if tiles are blank see pipeline.md gotchas). Re-run freely: only the model's collection is rebuilt.
 - Canonical (exports): `blender --background --factory-startup --python-exit-code 1 --python scripts/build.py -- models/<name>`
   → `out/<Name>.glb`, `.fbx`, `.blend`, `report.json`. Validation failure = nothing exported.
 - Verify: `python -m unittest -v` (characterization vs `golden.json`, GLB/FBX round-trip counts and orientation).

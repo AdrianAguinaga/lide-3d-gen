@@ -1,0 +1,8 @@
+name = "LabTable"
+description = "Standing laboratory bench 1.2 x 0.6 x 0.90 m: epoxy-resin top, powder-coated steel tube frame, lower shelf, levelling feet. Static: one mesh per material."
+source = "procedural"
+units = "m"
+
+[unity]
+tri_budget = 2000
+max_materials = 4

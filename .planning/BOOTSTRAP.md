@@ -13,12 +13,12 @@ compatible_versions:
   python_host: "3.11.9 (tests; solo stdlib)"
   blender_python: "3.13 (tomllib)"
   git: "2.51.0"
-  mcp_for_blender_addon: unknown   # no conectado durante el bootstrap
+  mcp_for_blender_addon: "1.8 (protocol 15), actualizado 2026-11-09 con uvx mcp-for-blender install-addon (aprobado)"
 setup_command: null            # sin dependencias que instalar
 smoke_command: python -m unittest -v
 last_verified_at: 2026-11-09
 limitations:
-  - MCP for Blender no estaba conectado (Blender cerrado); flujo en vivo sin verificar.
+  - Flujo en vivo verificado 2026-11-09 (runpy + look). En este equipo look material/rendered (EEVEE) sale vacío; solid + color_type MATERIAL funciona. Poly Haven/Sketchfab/Poly Pizza y generadores apagados en el panel del add-on.
   - Export FBX/GLB verificado por re-importación en Blender, no dentro de Unity ni en un Quest.
   - generate_3d / import_asset no probados (requieren MCP; generate_3d puede gastar créditos).
   - import_file probado con el propio HeliRotor.glb (escala 2 m, escala de objeto 1).

@@ -45,3 +45,5 @@ the same world bounds (catches a tipped-over FBX).
 - After removing objects, `view_layer.objects` can yield `None`; iterate `scene.objects`.
 - `o.dimensions` is stale until `view_layer.update()`.
 - FBX `bake_space_transform=True` tipped the model on round-trip; not used.
+- On this lab PC `look` with `shading="material"` or `"rendered"` (EEVEE) returns blank tiles, also with add-on 1.8.
+  Use solid shading with material colours: set the 3D view `shading.type="SOLID"`, `shading.color_type="MATERIAL"`, then `look`.
