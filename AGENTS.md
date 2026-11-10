@@ -20,5 +20,5 @@ reproducible from `models/<name>/build.py`; the engine is `lib/lide3d/` + `scrip
 ## Map
 `lib/lide3d/`: `geometry` (lathe, prism, box, loft) · `scene` (Model, part, group, material, import_file) · `validate` · `export`
 `models/<name>/`: `model.toml` · `build.py` · `golden.json` · `source/` · `out/`  —  new model from `templates/model/`
-`.planning/`: `BOOTSTRAP.md` · `STATE.md` · `templates/TASK-CONTRACT.md`  —  `evals/`: skill eval cases
+`.planning/`: `HANDOFF.md` (retomar aquí) · `BOOTSTRAP.md` · `STATE.md` · `templates/TASK-CONTRACT.md`  —  `evals/`: skill eval cases
 Engineering policy: `E:\skills\REQUIREMENTS_v3_investigacion_comparativa_agentes.md` (cite sections; don't load whole).
