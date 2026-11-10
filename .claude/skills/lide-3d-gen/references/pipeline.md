@@ -47,6 +47,8 @@ the same world bounds (catches a tipped-over FBX).
 - After removing objects, `view_layer.objects` can yield `None`; iterate `scene.objects`.
 - `o.dimensions` is stale until `view_layer.update()`.
 - Live Blender caches `lide3d` in `sys.modules`; `scripts/build.py` purges it so library edits apply on the next run.
+- MCP add-on 1.8: the first `get_addon_status` after a Blender restart can fail (WinError 10054); retry once.
+- Library toggles (`scene.blendermcp_use_polyhaven` etc.) are per scene: a new Blender session starts with them off.
 - FBX `bake_space_transform=True` tipped the model on round-trip; not used.
 - On this lab PC `look` with `shading="material"` or `"rendered"` (EEVEE) returns blank tiles, also with add-on 1.8.
   Use solid shading with material colours: set the 3D view `shading.type="SOLID"`, `shading.color_type="MATERIAL"`, then `look`.
