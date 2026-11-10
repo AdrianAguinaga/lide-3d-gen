@@ -10,7 +10,7 @@ Actualizado: 2026-11-09 · Metodología: perfil A (GSD + Ponytail + Grill; Graph
 - Abrir Blender con el add-on MCP y probar el flujo en vivo (build con runpy + `look`).
 - Probar `import_asset` y (con aprobación por créditos) `generate_3d` con un modelo real.
 - Verificar HeliRotor dentro de Unity (FBX nativo; GLB requiere glTFast).
-- Commit inicial (git init hecho, sin commit).
+- Repo público: https://github.com/AdrianAguinaga/lide-3d-gen (commit inicial 168d7fc, 2026-11-09). Sin LICENSE aún.
 - `../rotor-helicoptero-quest/`: archivos enviados a la Papelera (2026-11-09, aprobado); carpeta vacía pendiente de borrar fuera de la sesión.
 - Evals del skill (§14): casos en `evals/cases.md`, sin ejecutar.
 

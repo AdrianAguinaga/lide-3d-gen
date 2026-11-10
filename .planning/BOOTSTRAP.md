@@ -6,7 +6,7 @@ bootstrap ligero de `AGENTS.md` (STATE + sync check).
 ```yaml
 template_id: null              # brownfield: migrado desde ../rotor-helicoptero-quest (script suelto)
 source: E:/skills/LIDE-Skills/rotor-helicoptero-quest/build_rotor.py
-revision: null                 # sin git al adoptar
+revision: 168d7fc              # commit inicial, github.com/AdrianAguinaga/lide-3d-gen
 license: unknown
 compatible_versions:
   blender: "5.1.0 (build 2026-03-17)"
