@@ -1,0 +1,13 @@
+name = "MyModel"        # collection + export stem: PascalCase, no dots
+description = ""
+source = "procedural"   # procedural | imported | generated
+units = "m"
+# imported/generated only:
+# provenance = { provider = "", url = "", license = "", retrieved = "YYYY-MM-DD" }
+
+[unity]
+tri_budget = 10000
+max_materials = 8
+
+# [rig]
+# rotating = "Rotating_Assembly"

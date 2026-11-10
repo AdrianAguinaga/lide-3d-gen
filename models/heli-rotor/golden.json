@@ -1,0 +1,1872 @@
+{
+ "objects": {
+  "Bearing_Lower": {
+   "dims": [
+    0.11,
+    0.11,
+    0.02
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.02
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 768,
+   "type": "MESH",
+   "verts": 384
+  },
+  "Bearing_Upper": {
+   "dims": [
+    0.11,
+    0.11,
+    0.022
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.221
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 768,
+   "type": "MESH",
+   "verts": 384
+  },
+  "Blade_01": {
+   "dims": [
+    3.275,
+    0.22,
+    0.03933
+   ],
+   "location": [
+    0.26,
+    0.0,
+    0.88
+   ],
+   "materials": [
+    "M_Blade"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 412,
+   "type": "MESH",
+   "verts": 208
+  },
+  "Blade_02": {
+   "dims": [
+    3.275,
+    0.22,
+    0.03933
+   ],
+   "location": [
+    -0.13,
+    0.22517,
+    0.88
+   ],
+   "materials": [
+    "M_Blade"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    2.0944
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 412,
+   "type": "MESH",
+   "verts": 208
+  },
+  "Blade_03": {
+   "dims": [
+    3.275,
+    0.22,
+    0.03933
+   ],
+   "location": [
+    -0.13,
+    -0.22517,
+    0.88
+   ],
+   "materials": [
+    "M_Blade"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    4.18879
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 412,
+   "type": "MESH",
+   "verts": 208
+  },
+  "Blade_Bolt_01": {
+   "dims": [
+    0.024,
+    0.024,
+    0.072
+   ],
+   "location": [
+    0.26,
+    0.0,
+    0.88
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 144,
+   "type": "MESH",
+   "verts": 74
+  },
+  "Blade_Bolt_02": {
+   "dims": [
+    0.024,
+    0.024,
+    0.072
+   ],
+   "location": [
+    -0.13,
+    0.22517,
+    0.88
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    2.0944
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 144,
+   "type": "MESH",
+   "verts": 74
+  },
+  "Blade_Bolt_03": {
+   "dims": [
+    0.024,
+    0.024,
+    0.072
+   ],
+   "location": [
+    -0.13,
+    -0.22517,
+    0.88
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    4.18879
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 144,
+   "type": "MESH",
+   "verts": 74
+  },
+  "Blade_Grip_01": {
+   "dims": [
+    0.2,
+    0.14,
+    0.072
+   ],
+   "location": [
+    0.1,
+    0.0,
+    0.88
+   ],
+   "materials": [
+    "M_Aluminium"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 228,
+   "type": "MESH",
+   "verts": 122
+  },
+  "Blade_Grip_02": {
+   "dims": [
+    0.2,
+    0.14,
+    0.072
+   ],
+   "location": [
+    -0.05,
+    0.0866,
+    0.88
+   ],
+   "materials": [
+    "M_Aluminium"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    2.0944
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 228,
+   "type": "MESH",
+   "verts": 122
+  },
+  "Blade_Grip_03": {
+   "dims": [
+    0.2,
+    0.14,
+    0.072
+   ],
+   "location": [
+    -0.05,
+    -0.0866,
+    0.88
+   ],
+   "materials": [
+    "M_Aluminium"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    4.18879
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 228,
+   "type": "MESH",
+   "verts": 122
+  },
+  "Bolt_Lower_01": {
+   "dims": [
+    0.018,
+    0.01559,
+    0.043
+   ],
+   "location": [
+    0.1894,
+    0.07845,
+    -0.0065
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.3927
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 48,
+   "type": "MESH",
+   "verts": 26
+  },
+  "Bolt_Lower_02": {
+   "dims": [
+    0.018,
+    0.01559,
+    0.043
+   ],
+   "location": [
+    0.07845,
+    0.1894,
+    -0.0065
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    1.1781
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 48,
+   "type": "MESH",
+   "verts": 26
+  },
+  "Bolt_Lower_03": {
+   "dims": [
+    0.018,
+    0.01559,
+    0.043
+   ],
+   "location": [
+    -0.07845,
+    0.1894,
+    -0.0065
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    1.9635
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 48,
+   "type": "MESH",
+   "verts": 26
+  },
+  "Bolt_Lower_04": {
+   "dims": [
+    0.018,
+    0.01559,
+    0.043
+   ],
+   "location": [
+    -0.1894,
+    0.07845,
+    -0.0065
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    2.74889
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 48,
+   "type": "MESH",
+   "verts": 26
+  },
+  "Bolt_Lower_05": {
+   "dims": [
+    0.018,
+    0.01559,
+    0.043
+   ],
+   "location": [
+    -0.1894,
+    -0.07845,
+    -0.0065
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    3.53429
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 48,
+   "type": "MESH",
+   "verts": 26
+  },
+  "Bolt_Lower_06": {
+   "dims": [
+    0.018,
+    0.01559,
+    0.043
+   ],
+   "location": [
+    -0.07845,
+    -0.1894,
+    -0.0065
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    4.31969
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 48,
+   "type": "MESH",
+   "verts": 26
+  },
+  "Bolt_Lower_07": {
+   "dims": [
+    0.018,
+    0.01559,
+    0.043
+   ],
+   "location": [
+    0.07845,
+    -0.1894,
+    -0.0065
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    5.10509
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 48,
+   "type": "MESH",
+   "verts": 26
+  },
+  "Bolt_Lower_08": {
+   "dims": [
+    0.018,
+    0.01559,
+    0.043
+   ],
+   "location": [
+    0.1894,
+    -0.07845,
+    -0.0065
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    5.89049
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 48,
+   "type": "MESH",
+   "verts": 26
+  },
+  "Bolt_Upper_01": {
+   "dims": [
+    0.018,
+    0.01559,
+    0.043
+   ],
+   "location": [
+    0.1894,
+    0.07845,
+    0.2465
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.3927
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 48,
+   "type": "MESH",
+   "verts": 26
+  },
+  "Bolt_Upper_02": {
+   "dims": [
+    0.018,
+    0.01559,
+    0.043
+   ],
+   "location": [
+    0.07845,
+    0.1894,
+    0.2465
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    1.1781
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 48,
+   "type": "MESH",
+   "verts": 26
+  },
+  "Bolt_Upper_03": {
+   "dims": [
+    0.018,
+    0.01559,
+    0.043
+   ],
+   "location": [
+    -0.07845,
+    0.1894,
+    0.2465
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    1.9635
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 48,
+   "type": "MESH",
+   "verts": 26
+  },
+  "Bolt_Upper_04": {
+   "dims": [
+    0.018,
+    0.01559,
+    0.043
+   ],
+   "location": [
+    -0.1894,
+    0.07845,
+    0.2465
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    2.74889
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 48,
+   "type": "MESH",
+   "verts": 26
+  },
+  "Bolt_Upper_05": {
+   "dims": [
+    0.018,
+    0.01559,
+    0.043
+   ],
+   "location": [
+    -0.1894,
+    -0.07845,
+    0.2465
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    3.53429
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 48,
+   "type": "MESH",
+   "verts": 26
+  },
+  "Bolt_Upper_06": {
+   "dims": [
+    0.018,
+    0.01559,
+    0.043
+   ],
+   "location": [
+    -0.07845,
+    -0.1894,
+    0.2465
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    4.31969
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 48,
+   "type": "MESH",
+   "verts": 26
+  },
+  "Bolt_Upper_07": {
+   "dims": [
+    0.018,
+    0.01559,
+    0.043
+   ],
+   "location": [
+    0.07845,
+    -0.1894,
+    0.2465
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    5.10509
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 48,
+   "type": "MESH",
+   "verts": 26
+  },
+  "Bolt_Upper_08": {
+   "dims": [
+    0.018,
+    0.01559,
+    0.043
+   ],
+   "location": [
+    0.1894,
+    -0.07845,
+    0.2465
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    5.89049
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 48,
+   "type": "MESH",
+   "verts": 26
+  },
+  "HeliRotor_Root": {
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "parent": null,
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "type": "EMPTY"
+  },
+  "Hub_Nut": {
+   "dims": [
+    0.068,
+    0.05889,
+    0.025
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.9325
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 48,
+   "type": "MESH",
+   "verts": 24
+  },
+  "Magnet_01_N": {
+   "dims": [
+    0.01757,
+    0.06365,
+    0.166
+   ],
+   "location": [
+    0.11305,
+    0.0,
+    0.12
+   ],
+   "materials": [
+    "M_Magnet_N"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 44,
+   "type": "MESH",
+   "verts": 24
+  },
+  "Magnet_02_S": {
+   "dims": [
+    0.01757,
+    0.06365,
+    0.166
+   ],
+   "location": [
+    0.09146,
+    0.06645,
+    0.12
+   ],
+   "materials": [
+    "M_Magnet_S"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.62832
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 44,
+   "type": "MESH",
+   "verts": 24
+  },
+  "Magnet_03_N": {
+   "dims": [
+    0.01757,
+    0.06365,
+    0.166
+   ],
+   "location": [
+    0.03493,
+    0.10751,
+    0.12
+   ],
+   "materials": [
+    "M_Magnet_N"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    1.25664
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 44,
+   "type": "MESH",
+   "verts": 24
+  },
+  "Magnet_04_S": {
+   "dims": [
+    0.01757,
+    0.06365,
+    0.166
+   ],
+   "location": [
+    -0.03493,
+    0.10751,
+    0.12
+   ],
+   "materials": [
+    "M_Magnet_S"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    1.88496
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 44,
+   "type": "MESH",
+   "verts": 24
+  },
+  "Magnet_05_N": {
+   "dims": [
+    0.01757,
+    0.06365,
+    0.166
+   ],
+   "location": [
+    -0.09146,
+    0.06645,
+    0.12
+   ],
+   "materials": [
+    "M_Magnet_N"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    2.51327
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 44,
+   "type": "MESH",
+   "verts": 24
+  },
+  "Magnet_06_S": {
+   "dims": [
+    0.01757,
+    0.06365,
+    0.166
+   ],
+   "location": [
+    -0.11305,
+    0.0,
+    0.12
+   ],
+   "materials": [
+    "M_Magnet_S"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    3.14159
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 44,
+   "type": "MESH",
+   "verts": 24
+  },
+  "Magnet_07_N": {
+   "dims": [
+    0.01757,
+    0.06365,
+    0.166
+   ],
+   "location": [
+    -0.09146,
+    -0.06645,
+    0.12
+   ],
+   "materials": [
+    "M_Magnet_N"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    3.76991
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 44,
+   "type": "MESH",
+   "verts": 24
+  },
+  "Magnet_08_S": {
+   "dims": [
+    0.01757,
+    0.06365,
+    0.166
+   ],
+   "location": [
+    -0.03493,
+    -0.10751,
+    0.12
+   ],
+   "materials": [
+    "M_Magnet_S"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    4.39823
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 44,
+   "type": "MESH",
+   "verts": 24
+  },
+  "Magnet_09_N": {
+   "dims": [
+    0.01757,
+    0.06365,
+    0.166
+   ],
+   "location": [
+    0.03493,
+    -0.10751,
+    0.12
+   ],
+   "materials": [
+    "M_Magnet_N"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    5.02655
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 44,
+   "type": "MESH",
+   "verts": 24
+  },
+  "Magnet_10_S": {
+   "dims": [
+    0.01757,
+    0.06365,
+    0.166
+   ],
+   "location": [
+    0.09146,
+    -0.06645,
+    0.12
+   ],
+   "materials": [
+    "M_Magnet_S"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    5.65487
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 44,
+   "type": "MESH",
+   "verts": 24
+  },
+  "Main_Shaft": {
+   "dims": [
+    0.056,
+    0.056,
+    0.975
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.4975
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 480,
+   "type": "MESH",
+   "verts": 242
+  },
+  "Motor_EndBell_Lower": {
+   "dims": [
+    0.43,
+    0.43,
+    0.05
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.005
+   ],
+   "materials": [
+    "M_Aluminium"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 576,
+   "type": "MESH",
+   "verts": 290
+  },
+  "Motor_EndBell_Upper": {
+   "dims": [
+    0.43,
+    0.43,
+    0.05
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.235
+   ],
+   "materials": [
+    "M_Aluminium"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 768,
+   "type": "MESH",
+   "verts": 384
+  },
+  "Motor_Housing": {
+   "dims": [
+    0.46068,
+    0.46068,
+    0.24
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.12
+   ],
+   "materials": [
+    "M_Aluminium"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 672,
+   "type": "MESH",
+   "verts": 384
+  },
+  "Pitch_Link_01": {
+   "dims": [
+    0.02,
+    0.01902,
+    0.372
+   ],
+   "location": [
+    0.11,
+    0.085,
+    0.694
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.65789
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 120,
+   "type": "MESH",
+   "verts": 62
+  },
+  "Pitch_Link_02": {
+   "dims": [
+    0.02,
+    0.01902,
+    0.372
+   ],
+   "location": [
+    -0.12861,
+    0.05276,
+    0.694
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    2.75228
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 120,
+   "type": "MESH",
+   "verts": 62
+  },
+  "Pitch_Link_03": {
+   "dims": [
+    0.02,
+    0.01902,
+    0.372
+   ],
+   "location": [
+    0.01861,
+    -0.13776,
+    0.694
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    4.84668
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 120,
+   "type": "MESH",
+   "verts": 62
+  },
+  "Rotating_Assembly": {
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "parent": "HeliRotor_Root",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "type": "EMPTY"
+  },
+  "Rotor_Hub": {
+   "dims": [
+    0.23078,
+    0.26649,
+    0.06
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.88
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 576,
+   "type": "MESH",
+   "verts": 294
+  },
+  "Rotor_Yoke": {
+   "dims": [
+    0.216,
+    0.216,
+    0.17
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.12
+   ],
+   "materials": [
+    "M_Lamination"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 384,
+   "type": "MESH",
+   "verts": 192
+  },
+  "Stationary_Assembly": {
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "parent": "HeliRotor_Root",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "type": "EMPTY"
+  },
+  "Stator_Coil_01": {
+   "dims": [
+    0.029,
+    0.048,
+    0.206
+   ],
+   "location": [
+    0.1515,
+    0.0,
+    0.12
+   ],
+   "materials": [
+    "M_Copper"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 128,
+   "type": "MESH",
+   "verts": 64
+  },
+  "Stator_Coil_02": {
+   "dims": [
+    0.029,
+    0.048,
+    0.206
+   ],
+   "location": [
+    0.1312,
+    0.07575,
+    0.12
+   ],
+   "materials": [
+    "M_Copper"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.5236
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 128,
+   "type": "MESH",
+   "verts": 64
+  },
+  "Stator_Coil_03": {
+   "dims": [
+    0.029,
+    0.048,
+    0.206
+   ],
+   "location": [
+    0.07575,
+    0.1312,
+    0.12
+   ],
+   "materials": [
+    "M_Copper"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    1.0472
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 128,
+   "type": "MESH",
+   "verts": 64
+  },
+  "Stator_Coil_04": {
+   "dims": [
+    0.029,
+    0.048,
+    0.206
+   ],
+   "location": [
+    0.0,
+    0.1515,
+    0.12
+   ],
+   "materials": [
+    "M_Copper"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    1.5708
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 128,
+   "type": "MESH",
+   "verts": 64
+  },
+  "Stator_Coil_05": {
+   "dims": [
+    0.029,
+    0.048,
+    0.206
+   ],
+   "location": [
+    -0.07575,
+    0.1312,
+    0.12
+   ],
+   "materials": [
+    "M_Copper"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    2.0944
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 128,
+   "type": "MESH",
+   "verts": 64
+  },
+  "Stator_Coil_06": {
+   "dims": [
+    0.029,
+    0.048,
+    0.206
+   ],
+   "location": [
+    -0.1312,
+    0.07575,
+    0.12
+   ],
+   "materials": [
+    "M_Copper"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    2.61799
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 128,
+   "type": "MESH",
+   "verts": 64
+  },
+  "Stator_Coil_07": {
+   "dims": [
+    0.029,
+    0.048,
+    0.206
+   ],
+   "location": [
+    -0.1515,
+    0.0,
+    0.12
+   ],
+   "materials": [
+    "M_Copper"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    3.14159
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 128,
+   "type": "MESH",
+   "verts": 64
+  },
+  "Stator_Coil_08": {
+   "dims": [
+    0.029,
+    0.048,
+    0.206
+   ],
+   "location": [
+    -0.1312,
+    -0.07575,
+    0.12
+   ],
+   "materials": [
+    "M_Copper"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    3.66519
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 128,
+   "type": "MESH",
+   "verts": 64
+  },
+  "Stator_Coil_09": {
+   "dims": [
+    0.029,
+    0.048,
+    0.206
+   ],
+   "location": [
+    -0.07575,
+    -0.1312,
+    0.12
+   ],
+   "materials": [
+    "M_Copper"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    4.18879
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 128,
+   "type": "MESH",
+   "verts": 64
+  },
+  "Stator_Coil_10": {
+   "dims": [
+    0.029,
+    0.048,
+    0.206
+   ],
+   "location": [
+    0.0,
+    -0.1515,
+    0.12
+   ],
+   "materials": [
+    "M_Copper"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    4.71239
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 128,
+   "type": "MESH",
+   "verts": 64
+  },
+  "Stator_Coil_11": {
+   "dims": [
+    0.029,
+    0.048,
+    0.206
+   ],
+   "location": [
+    0.07575,
+    -0.1312,
+    0.12
+   ],
+   "materials": [
+    "M_Copper"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    5.23599
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 128,
+   "type": "MESH",
+   "verts": 64
+  },
+  "Stator_Coil_12": {
+   "dims": [
+    0.029,
+    0.048,
+    0.206
+   ],
+   "location": [
+    0.1312,
+    -0.07575,
+    0.12
+   ],
+   "materials": [
+    "M_Copper"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    5.75959
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 128,
+   "type": "MESH",
+   "verts": 64
+  },
+  "Stator_Core": {
+   "dims": [
+    0.39,
+    0.39,
+    0.18
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.12
+   ],
+   "materials": [
+    "M_Lamination"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 1056,
+   "type": "MESH",
+   "verts": 552
+  },
+  "Swashplate_Lower": {
+   "dims": [
+    0.19,
+    0.19,
+    0.025
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.4775
+   ],
+   "materials": [
+    "M_Aluminium"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 384,
+   "type": "MESH",
+   "verts": 192
+  },
+  "Swashplate_Upper": {
+   "dims": [
+    0.26936,
+    0.25147,
+    0.023
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.5035
+   ],
+   "materials": [
+    "M_Aluminium"
+   ],
+   "parent": "Rotating_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 420,
+   "type": "MESH",
+   "verts": 216
+  }
+ },
+ "stats": {
+  "materials": [
+   "M_Aluminium",
+   "M_Blade",
+   "M_Copper",
+   "M_Lamination",
+   "M_Magnet_N",
+   "M_Magnet_S",
+   "M_Steel"
+  ],
+  "parts": 62,
+  "triangles": 12356
+ }
+}

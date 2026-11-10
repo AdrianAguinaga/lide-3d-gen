@@ -1,0 +1,13 @@
+name = "HeliRotor"   # collection name and export file stem
+description = "Generic electric-helicopter main rotor with direct-drive PM motor (10 poles / 12 slots), 3 blades, swashplate. Illustrative dimensions, not a real aircraft."
+source = "procedural" # procedural | generated | imported
+units = "m"
+
+[unity]
+tri_budget = 20000
+max_materials = 8
+
+[rig]
+# Empties that Unity scripts drive
+rotating = "Rotating_Assembly"   # spins about Unity +Y (Blender +Z), CCW seen from above
+stationary = "Stationary_Assembly"
