@@ -1,7 +1,7 @@
 # STATE
 
 Actualizado: 2026-11-09 · Metodología: perfil A (GSD + Ponytail + Grill; Graphify opcional) — REQUIREMENTS v3 §4
-Repo público: https://github.com/AdrianAguinaga/lide-3d-gen (último push 2dc24b3). Sin LICENSE.
+Repo público: https://github.com/AdrianAguinaga/lide-3d-gen (push al día en main). Sin LICENSE.
 
 ## Hecho
 - HeliRotor migrado con caracterización (golden) y round-trip GLB/FBX. Origen `../rotor-helicoptero-quest/` en la Papelera.
@@ -17,7 +17,6 @@ Repo público: https://github.com/AdrianAguinaga/lide-3d-gen (último push 2dc24
 ## Pendiente / decisiones del usuario
 - Unity sin licencia en batchmode: iniciar sesión en Unity Hub y activar Personal → `python scripts/unity_check.py`.
 - Aceptar LabStool (→ golden.json).
-- Commit/push de los cambios desde 2dc24b3.
 - `generate_3d`: generadores apagados; requieren cuenta/clave y pueden costar créditos.
 - Evals restantes de `evals/cases.md` (2–11).
 - Borrar la carpeta vacía `../rotor-helicoptero-quest/` fuera de esta sesión.
