@@ -25,9 +25,9 @@
     1.0,
     1.0
    ],
-   "tris": 512,
+   "tris": 256,
    "type": "MESH",
-   "verts": 264
+   "verts": 136
   },
   "Frame": {
    "dims": [
@@ -144,6 +144,6 @@
    "M_Steel"
   ],
   "parts": 4,
-  "triangles": 680
+  "triangles": 424
  }
 }

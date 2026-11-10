@@ -36,7 +36,9 @@ rotating = "Rotating_Assembly"
 (blade root, hinge, wheel axle) and when the part is not symmetric (bounds centre off-axis).
 
 ## Checks (validate.check)
-tri_budget · max_materials · every mesh has a material · object scale = 1 · no `.001` names (re-run leak).
+tri_budget · max_materials · every mesh has a material and a UV map · object scale = 1 · no `.001` names (re-run leak).
+`report.json` adds `size`, `tri_hotspots` (heaviest parts) and `unity_box_collider` (Unity axes; warns when off-centre).
+`Model.part` writes box-projected UVs (1 UV unit = 1 m) to every procedural mesh.
 Tests (`tests/test_models.py`) add: golden fingerprint, GLB and FBX re-import with the same parts/tris and
 the same world bounds (catches a tipped-over FBX).
 
@@ -44,6 +46,7 @@ the same world bounds (catches a tipped-over FBX).
 - `blender --python` exits 0 on a Python exception unless `--python-exit-code 1` is passed.
 - After removing objects, `view_layer.objects` can yield `None`; iterate `scene.objects`.
 - `o.dimensions` is stale until `view_layer.update()`.
+- Live Blender caches `lide3d` in `sys.modules`; `scripts/build.py` purges it so library edits apply on the next run.
 - FBX `bake_space_transform=True` tipped the model on round-trip; not used.
 - On this lab PC `look` with `shading="material"` or `"rendered"` (EEVEE) returns blank tiles, also with add-on 1.8.
   Use solid shading with material colours: set the 3D view `shading.type="SOLID"`, `shading.color_type="MATERIAL"`, then `look`.

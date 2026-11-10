@@ -12,6 +12,8 @@ if str(ROOT / "lib") not in sys.path:
     sys.path.insert(0, str(ROOT / "lib"))
 
 import bpy
+for _k in [k for k in sys.modules if k == "lide3d" or k.startswith("lide3d.")]:
+    del sys.modules[_k]  # live Blender caches modules across runs: always load the current lib
 from lide3d import export, validate
 from lide3d.scene import Model
 
@@ -43,7 +45,10 @@ if not problems and "--no-export" not in argv:
     if bpy.app.background:  # live session: don't copy the user's whole scene
         export.blend(stem.with_suffix(".blend"))
     (out / "report.json").write_text(json.dumps({
-        "model": spec["name"], "stats": st, "blender": bpy.app.version_string,
+        "model": spec["name"], "stats": st, "size": validate.world_size(m.coll),
+        "tri_hotspots": validate.tri_hotspots(m.coll),
+        "unity_box_collider": validate.box_collider(m.coll),
+        "blender": bpy.app.version_string,
         "built_at": datetime.datetime.now().isoformat(timespec="seconds"),
         "files": sorted(p.name for p in out.iterdir() if p.suffix in (".glb", ".fbx", ".blend")),
     }, indent=1))

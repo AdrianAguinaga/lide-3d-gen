@@ -17,6 +17,18 @@ def material(name, color, metallic=0.0, rough=0.5):
     return m
 
 
+def box_uv(bm):
+    """Box projection, 1 UV unit = 1 m: each face is projected along its dominant normal axis.
+    Enough for tiling textures and Unity lightmap UV generation; not an artist unwrap."""
+    uv = bm.loops.layers.uv.verify()
+    for f in bm.faces:
+        n = f.normal
+        ax = max(range(3), key=lambda i: abs(n[i]))
+        u, v = [(1, 2), (0, 2), (0, 1)][ax]
+        for lp in f.loops:
+            lp[uv].uv = (lp.vert.co[u], lp.vert.co[v])
+
+
 class Model:
     def __init__(self, name):
         self.name = name
@@ -59,6 +71,7 @@ class Model:
         for e in bm.edges:
             if len(e.link_faces) == 2 and e.calc_face_angle(0) > limit:
                 e.smooth = False
+        box_uv(bm)
         me = bpy.data.meshes.new(name)
         bm.to_mesh(me)
         bm.free()

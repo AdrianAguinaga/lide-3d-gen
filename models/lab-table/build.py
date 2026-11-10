@@ -49,5 +49,5 @@ def build(m):
 
     bm = bmesh.new()
     for x, y in LEGS:
-        lathe(bm, [(0, 0), (0.022, 0), (0.022, 0.012), (0.006, 0.012), (0.006, FOOT_H), (0, FOOT_H)], 16, T(x, y))
+        lathe(bm, [(0, 0), (0.022, 0), (0.022, 0.012), (0.006, 0.012), (0.006, FOOT_H), (0, FOOT_H)], 8, T(x, y))  # 2 cm parts: 8 segments read as round in VR
     m.part("Feet", bm, STEEL, root)

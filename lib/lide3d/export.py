@@ -21,7 +21,7 @@ def fbx(coll, path):
     _select(coll)
     bpy.ops.export_scene.fbx(filepath=str(path), use_selection=True, object_types={"EMPTY", "MESH"},
                              apply_scale_options="FBX_SCALE_ALL", axis_forward="-Z", axis_up="Y",
-                             add_leaf_bones=False)
+                             add_leaf_bones=False, path_mode="COPY", embed_textures=True)
 
 
 def blend(path):

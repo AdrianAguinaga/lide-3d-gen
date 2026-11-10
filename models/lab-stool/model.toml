@@ -1,0 +1,9 @@
+name = "LabStool"
+description = "Tall industrial metal stool with leather seat, for the standing LabTable (0.90 m). Imported from Poly Haven, 1k textures."
+source = "imported"
+units = "m"
+provenance = { provider = "Poly Haven", id = "metal_stool_01", author = "Ulan Cabanilla", url = "https://polyhaven.com/a/metal_stool_01", license = "CC0", retrieved = "2026-11-09", note = "imported via glTF (Poly Haven .blend is Blender 5.2); materials are the glTF conversion" }
+
+[unity]
+tri_budget = 10000
+max_materials = 2

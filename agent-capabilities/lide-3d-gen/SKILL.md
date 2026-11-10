@@ -27,6 +27,8 @@ For 2–3: save the file to `models/<name>/source/` and load it in `build.py` wi
 
 ## 4. Build loop
 - New model: copy `templates/model/` to `models/<name>/`, fill `model.toml`.
+- Geometry density: segments by visible size, not by habit — revolved parts < 3 cm: 8 · < 10 cm: 12–16 ·
+  large/close-up: 32–48. Static props: merge parts per material (one mesh per material). UVs are automatic.
 - Live (iterate): `execute_blender_code` with
   `import runpy, sys; sys.argv = ["", "--", r"<abs>/models/<name>", "--no-export"]; runpy.run_path(r"<abs>/scripts/build.py")`
   then `look` (`mode="angles"`, small `max_size`; if tiles are blank see pipeline.md gotchas). Re-run freely: only the model's collection is rebuilt.
@@ -34,11 +36,17 @@ For 2–3: save the file to `models/<name>/source/` and load it in `build.py` wi
   → `out/<Name>.glb`, `.fbx`, `.blend`, `report.json`. Validation failure = nothing exported.
 - Verify: `python -m unittest -v` (characterization vs `golden.json`, GLB/FBX round-trip counts and orientation).
 
-## 5. Accepting a model
+## 5. Deliver (every time)
+Tell the user: files in `out/`, parts / triangles / materials, dimensions, how it was verified (`look`, tests),
+what is unverified (Unity, headset), assumptions you made (e.g. a height nobody gave), and the collider suggestion
+from `report.json` → `unity_box_collider` (static props: one BoxCollider on the root; moving assemblies: colliders
+per moving empty or none; never MeshCollider on high-poly parts). If over budget, start from `tri_hotspots`.
+
+## 6. Accepting a model
 Only when the user accepts it: write `golden.json` with `--fingerprint models/<name>/golden.json`.
 Later geometry changes make the test fail on purpose; regenerate golden only for an intended change, and say so.
 
-## 6. Limits — ask first
+## 7. Limits — ask first
 - `generate_3d` (credits), assets without a clear license, deleting/renaming models, raising `tri_budget`
   or `max_materials`, weakening `lide3d/validate.py` checks, editing `golden.json` to make a test pass.
 - Report validation and test failures verbatim. A model not checked with `look` is "unverified visually".

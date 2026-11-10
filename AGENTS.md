@@ -8,6 +8,7 @@ reproducible from `models/<name>/build.py`; the engine is `lib/lide3d/` + `scrip
 - Build one model: `blender --background --factory-startup --python-exit-code 1 --python scripts/build.py -- models/<name>`
   (Blender: `C:\Program Files\Blender Foundation\Blender 5.1\blender.exe`; tests read env `LIDE3D_BLENDER`)
 - Quality gate: `python -m unittest -v` (all models: validate, golden, GLB/FBX round-trip; skill copies in sync)
+- Unity import check (needs Unity license): `python scripts/unity_check.py`
 - Model work: skill `lide-3d-gen` (canonical `agent-capabilities/lide-3d-gen/`).
 
 ## Boundaries

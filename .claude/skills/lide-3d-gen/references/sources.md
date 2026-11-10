@@ -22,3 +22,7 @@ Mixing is fine: e.g. a procedural rig with an imported decorative shell, all und
    `import_file` bakes transforms into the mesh (scale 1), drops empties, centres on XY and grounds at Z = 0.
 4. Record `provenance` in `model.toml`. Generated/imported assets arrive at arbitrary scale: always pass `size`.
 5. Materials come from the asset; check `max_materials` and textures in the report.
+6. Rename the imported mesh/material to the naming convention in `build.py` (see `models/lab-stool/`).
+
+Tested 2026-11-09: Poly Haven `metal_stool_01` (CC0) → `models/lab-stool`. Poly Haven .blend files newer than
+the local Blender are imported via glTF (materials are the glTF conversion).
