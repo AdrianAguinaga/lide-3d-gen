@@ -27,10 +27,13 @@ rotating = "Rotating_Assembly"
 ## lib/lide3d API
 | Module | Use |
 |---|---|
-| `geometry` | `lathe(bm, [(r,z)...], seg, M)`, `prism(bm, [(x,y)...], z0, z1, M)`, `box(...)`, `loft(bm, loops)`, `Rz(a)`, `T(x,y,z)`, `TO_X` |
-| `scene` | `material(name, rgb, metallic, rough)`, `Model.group(name, parent)`, `Model.part(name, bm, mat, parent, angle, pivot, offset)`, `Model.import_file(path, parent, size, ground)` |
+| `geometry` | `lathe(bm, [(r,z)...], seg, M)`, `prism(bm, [(x,y)...], z0, z1, M)`, `box(...)`, `loft(bm, loops)`, `coil(bm, r, wire_r, z0, z1, turns)`, `hull2d(pts)`, `Rz(a)`, `T(x,y,z)`, `TO_X` |
+| `scene` | `material(name, rgb, metallic, rough)`, `Model.group(name, parent)`, `Model.part(name, bm, mat, parent, angle, pivot, offset, cut=[bm...], cut_mat=M)`, `Model.import_file(path, parent, size, ground)` |
 | `validate` | `stats`, `fingerprint`, `check(coll, spec["unity"])` |
 | `export` | `glb`, `fbx` (Unity axes, scale 1), `blend` |
+
+`part(cut=...)` subtracts solids with an exact boolean (bores, holes, cutaway sections); faces made by the cut get
+`cut_mat` — use a red `M_Cutaway` for educational sections. Example: `models/inline-four-engine`.
 
 `part()` sets the origin at the bounds centre unless `pivot` is given. Use `pivot` for anything that rotates
 (blade root, hinge, wheel axle) and when the part is not symmetric (bounds centre off-axis).

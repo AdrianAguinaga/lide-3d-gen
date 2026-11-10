@@ -18,3 +18,12 @@
 Acciones derivadas para el skill — **aplicadas 2026-11-09** (aprobadas): UVs automáticos en `Model.part` + validación de UV;
 `unity_box_collider` y `tri_hotspots` en report.json + paso "Deliver" en el skill; guía de segmentos por tamaño.
 LabTable 680 → 424 tris (patas 16 → 8 segmentos; golden regenerado). Sigue por encima de 224 (sin skill): una sola malla y niveladores más simples; diferencia no investigada a detalle.
+
+## Motor 4 cilindros en línea (2026-11-09)
+Con skill, mismo autor del skill (no ciego). Aclaración del usuario: educativo, en línea, cortes, piezas separables.
+74 partes / 30 960 tris / 7 materiales; booleanos exactos con caras de corte rojas; jerarquía pistón > perno, biela.
+Defecto encontrado con `look`: piñones de levas superpuestos (válvulas verticales) → válvulas a 15°, levas a 92 mm.
+Separabilidad verificada en vivo con vista explosionada temporal. Unity sin verificar (licencia). Aceptado por el usuario.
+Añadidos: banda de distribución, múltiple de admisión (escape omitido: lado del corte). 76 partes / 33 800 tris / 8 mat.
+Defecto encontrado midiendo en Blender: alzada calculada con el radio del lóbulo (≈3 mm de error en flancos) →
+función soporte (taqué plano). Pico 8.0 mm vs 7.94 medido. Scripts Unity compilan con Roslyn de Unity; comportamiento sin verificar.

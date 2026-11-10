@@ -23,7 +23,8 @@ scripts/sync_skills.py            copia el skill a .claude/skills y .agents/skil
 models/<nombre>/                  model.toml · build.py · golden.json · source/ · out/ (no versionado)
 templates/model/                  plantilla para un modelo nuevo
 tests/                            smoke + caracterización + round-trip GLB/FBX
-unity/ + scripts/unity_check.py   importación real en Unity (batchmode, requiere licencia)
+unity/Editor + scripts/unity_check.py   importación real en Unity (batchmode, requiere licencia)
+unity/Runtime/                   LideExplode (vista explosionada) · LideEngineKinematics (animación del motor)
 evals/                            casos para evaluar el skill (REQUIREMENTS v3 §14)
 .planning/                        BOOTSTRAP, STATE, contrato de tarea
 ```
@@ -34,3 +35,4 @@ evals/                            casos para evaluar el skill (REQUIREMENTS v3 �
 | `heli-rotor` (HeliRotor) | procedural | 62 | 12 356 | 7 |
 | `lab-table` (LabTable) | procedural | 4 | 424 | 4 |
 | `lab-stool` (LabStool) | Poly Haven `metal_stool_01` (CC0) | 1 | 8 334 | 1 (texturas 1k) |
+| `inline-four-engine` (InlineFour) | procedural, corte educativo, banda + múltiple de admisión | 76 | 33 800 | 8 |

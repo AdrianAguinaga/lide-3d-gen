@@ -27,6 +27,9 @@ For 2–3: save the file to `models/<name>/source/` and load it in `build.py` wi
 
 ## 4. Build loop
 - New model: copy `templates/model/` to `models/<name>/`, fill `model.toml`.
+- Educational / exploded models: every part the user may grab is its own object; moving chains as a hierarchy
+  (piston > pin, conrod) so a parent drags its children; sections with `part(cut=..., cut_mat=red)`; moving parts whole.
+  Check separability live by offsetting parts, `look`, then rebuild (exploded preview is never saved).
 - Geometry density: segments by visible size, not by habit — revolved parts < 3 cm: 8 · < 10 cm: 12–16 ·
   large/close-up: 32–48. Static props: merge parts per material (one mesh per material). UVs are automatic.
 - Live (iterate): `execute_blender_code` with

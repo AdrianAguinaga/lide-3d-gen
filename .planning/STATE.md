@@ -11,6 +11,8 @@ Repo público: https://github.com/AdrianAguinaga/lide-3d-gen (último push 2dc24
 - Eval 1 con y sin skill (`evals/results.md`). Mejoras aplicadas: UVs automáticos + validación, `unity_box_collider`
   y `tri_hotspots` en report.json, guía de segmentos (LabTable 680 → 424 tris), recarga de `lide3d` en Blender vivo.
 - `scripts/unity_check.py` + `unity/Editor/LideImportCheck.cs` listos.
+- InlineFour (motor 4 en línea, corte educativo) aceptado: 76 partes / 33 800 tris; lib con `part(cut=...)`, `coil`, `hull2d`.
+- `unity/Runtime/LideExplode.cs` y `LideEngineKinematics.cs`: compilan (Roslyn de Unity), comportamiento sin verificar.
 
 ## Pendiente / decisiones del usuario
 - Unity sin licencia en batchmode: iniciar sesión en Unity Hub y activar Personal → `python scripts/unity_check.py`.
@@ -21,4 +23,4 @@ Repo público: https://github.com/AdrianAguinaga/lide-3d-gen (último push 2dc24
 - Borrar la carpeta vacía `../rotor-helicoptero-quest/` fuera de esta sesión.
 
 ## Siguiente acción
-Licencia Unity → unity_check (rotor, mesa, banco).
+Licencia Unity → unity_check (4 modelos + compila scripts) → probar animación y explosión del motor en Unity.

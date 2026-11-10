@@ -25,6 +25,7 @@ lide = proj / "Assets/Lide"
 shutil.rmtree(lide, ignore_errors=True)
 (lide / "Editor").mkdir(parents=True)
 shutil.copy(ROOT / "unity/Editor/LideImportCheck.cs", lide / "Editor")
+shutil.copytree(ROOT / "unity/Runtime", lide / "Runtime")  # compiled by Unity too
 expected = {}
 for rep in ROOT.glob("models/*/out/report.json"):
     r = json.loads(rep.read_text())

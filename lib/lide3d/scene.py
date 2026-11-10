@@ -29,6 +29,60 @@ def box_uv(bm):
             lp[uv].uv = (lp.vert.co[u], lp.vert.co[v])
 
 
+def _shade(bm, limit):
+    """Outward normals, smooth faces, sharp edges above limit (radians), box UVs."""
+    bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
+    bm.normal_update()
+    for f in bm.faces:
+        f.smooth = True
+    for e in bm.edges:
+        if len(e.link_faces) == 2 and e.calc_face_angle(0) > limit:
+            e.smooth = False
+    box_uv(bm)
+
+
+def _boolean_cut(ob, cutters, c, cut_mat, limit):
+    """Apply an exact DIFFERENCE of cutter solids to ob (cutters given in ob's pre-pivot coordinates)."""
+    tmp = bpy.data.collections.new("_lide3d_cut")
+    bpy.context.scene.collection.children.link(tmp)
+    objs = []
+    for i, cbm in enumerate(cutters):
+        for v in cbm.verts:
+            v.co -= c
+        _shade(cbm, limit)
+        cme = bpy.data.meshes.new(f"_cut{i}")
+        cbm.to_mesh(cme)
+        cbm.free()
+        if cut_mat:
+            cme.materials.append(cut_mat)
+        co = bpy.data.objects.new(f"_cut{i}", cme)
+        tmp.objects.link(co)
+        co.parent = ob  # identity local transform = ob's frame
+        objs.append(co)
+    mod = ob.modifiers.new("cut", "BOOLEAN")
+    mod.operation, mod.operand_type, mod.collection, mod.solver = "DIFFERENCE", "COLLECTION", tmp, "EXACT"
+    mod.material_mode = "TRANSFER"
+    deps = bpy.context.evaluated_depsgraph_get()
+    new = bpy.data.meshes.new_from_object(ob.evaluated_get(deps))
+    old = ob.data
+    ob.modifiers.remove(mod)
+    ob.data = new
+    bpy.data.meshes.remove(old)
+    new.name = ob.name
+    for co in objs:
+        me = co.data
+        bpy.data.objects.remove(co, do_unlink=True)
+        bpy.data.meshes.remove(me)
+    bpy.data.collections.remove(tmp)
+    bm = bmesh.new()
+    bm.from_mesh(new)
+    for e in bm.edges:  # re-mark sharp edges on the new section faces (keep existing UVs)
+        if len(e.link_faces) == 2 and e.calc_face_angle(0) > limit:
+            e.smooth = False
+    bm.to_mesh(new)
+    bm.free()
+
+
 class Model:
     def __init__(self, name):
         self.name = name
@@ -54,24 +108,22 @@ class Model:
         e.parent = parent
         return e
 
-    def part(self, name, bm, mat, parent, angle=0.0, pivot=None, offset=(0, 0, 0), sharp_deg=35):
-        """Mesh object from bm. Origin = bounds centre (or local pivot); rotated by angle about Z."""
+    def part(self, name, bm, mat, parent, angle=0.0, pivot=None, offset=(0, 0, 0), sharp_deg=35,
+             cut=None, cut_mat=None):
+        """Mesh object from bm. Origin = bounds centre (or local pivot); rotated by angle about Z.
+
+        cut: list of bmesh solids (same coordinates as bm) subtracted with an exact boolean — holes,
+        bores, cutaway sections. Faces created by the cut get cut_mat (e.g. red section colour).
+        """
         if pivot is None:
             cs = [v.co for v in bm.verts]
             c = Vector([(min(p[i] for p in cs) + max(p[i] for p in cs)) / 2 for i in range(3)])
         else:
             c = Vector(pivot)
+        limit = radians(sharp_deg)
         for v in bm.verts:
             v.co -= c
-        bmesh.ops.recalc_face_normals(bm, faces=bm.faces)
-        bm.normal_update()
-        limit = radians(sharp_deg)
-        for f in bm.faces:
-            f.smooth = True
-        for e in bm.edges:
-            if len(e.link_faces) == 2 and e.calc_face_angle(0) > limit:
-                e.smooth = False
-        box_uv(bm)
+        _shade(bm, limit)
         me = bpy.data.meshes.new(name)
         bm.to_mesh(me)
         bm.free()
@@ -81,6 +133,8 @@ class Model:
         ob.parent = parent
         ob.location = (Rz(angle) @ c) + Vector(offset)
         ob.rotation_euler = (0, 0, angle)
+        if cut:
+            _boolean_cut(ob, cut, c, cut_mat, limit)
         return ob
 
     def import_file(self, path, parent=None, size=None, ground=True):

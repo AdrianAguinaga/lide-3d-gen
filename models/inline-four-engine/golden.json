@@ -1,0 +1,2378 @@
+{
+ "objects": {
+  "Camshaft_Exhaust": {
+   "dims": [
+    0.436,
+    0.09,
+    0.09
+   ],
+   "location": [
+    0.0,
+    -0.04625,
+    0.3154
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 1632,
+   "type": "MESH",
+   "verts": 844
+  },
+  "Camshaft_Intake": {
+   "dims": [
+    0.436,
+    0.09,
+    0.09
+   ],
+   "location": [
+    0.0,
+    0.04625,
+    0.3154
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 1632,
+   "type": "MESH",
+   "verts": 844
+  },
+  "Conrod_01": {
+   "dims": [
+    0.021,
+    0.066,
+    0.1775
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Piston_01",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 460,
+   "type": "MESH",
+   "verts": 232
+  },
+  "Conrod_02": {
+   "dims": [
+    0.021,
+    0.066,
+    0.1775
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Piston_02",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 460,
+   "type": "MESH",
+   "verts": 232
+  },
+  "Conrod_03": {
+   "dims": [
+    0.021,
+    0.066,
+    0.1775
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Piston_03",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 460,
+   "type": "MESH",
+   "verts": 232
+  },
+  "Conrod_04": {
+   "dims": [
+    0.021,
+    0.066,
+    0.1775
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Piston_04",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 460,
+   "type": "MESH",
+   "verts": 232
+  },
+  "Crank_Assembly": {
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "parent": "InlineFour_Root",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "type": "EMPTY"
+  },
+  "Crank_Pulley": {
+   "dims": [
+    0.022,
+    0.13,
+    0.13
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Crank_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 672,
+   "type": "MESH",
+   "verts": 336
+  },
+  "Crank_Sprocket": {
+   "dims": [
+    0.014,
+    0.045,
+    0.045
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Crank_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 256,
+   "type": "MESH",
+   "verts": 128
+  },
+  "Crankshaft": {
+   "dims": [
+    0.485,
+    0.11238,
+    0.1415
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Crank_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 1952,
+   "type": "MESH",
+   "verts": 1014
+  },
+  "Cylinder_01": {
+   "location": [
+    -0.132,
+    0.0,
+    0.0
+   ],
+   "parent": "InlineFour_Root",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "type": "EMPTY"
+  },
+  "Cylinder_02": {
+   "location": [
+    -0.044,
+    0.0,
+    0.0
+   ],
+   "parent": "InlineFour_Root",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "type": "EMPTY"
+  },
+  "Cylinder_03": {
+   "location": [
+    0.044,
+    0.0,
+    0.0
+   ],
+   "parent": "InlineFour_Root",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "type": "EMPTY"
+  },
+  "Cylinder_04": {
+   "location": [
+    0.132,
+    0.0,
+    0.0
+   ],
+   "parent": "InlineFour_Root",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "type": "EMPTY"
+  },
+  "Cylinder_Head": {
+   "dims": [
+    0.43,
+    0.06934,
+    0.125
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.26375
+   ],
+   "materials": [
+    "M_Aluminium",
+    "M_Cutaway"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 1932,
+   "type": "MESH",
+   "verts": 944
+  },
+  "Engine_Block": {
+   "dims": [
+    0.43,
+    0.085,
+    0.24625
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.07812
+   ],
+   "materials": [
+    "M_CastIron",
+    "M_Cutaway"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 796,
+   "type": "MESH",
+   "verts": 400
+  },
+  "Flywheel": {
+   "dims": [
+    0.03,
+    0.28,
+    0.28
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Crank_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 768,
+   "type": "MESH",
+   "verts": 384
+  },
+  "InlineFour_Root": {
+   "location": [
+    0.0,
+    0.0,
+    0.165
+   ],
+   "parent": null,
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "type": "EMPTY"
+  },
+  "Intake_Manifold": {
+   "dims": [
+    0.44,
+    0.14,
+    0.07
+   ],
+   "location": [
+    0.03,
+    0.155,
+    0.22925
+   ],
+   "materials": [
+    "M_Aluminium"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 2432,
+   "type": "MESH",
+   "verts": 1210
+  },
+  "Oil_Pan": {
+   "dims": [
+    0.41,
+    0.085,
+    0.12
+   ],
+   "location": [
+    0.0,
+    0.0,
+    -0.105
+   ],
+   "materials": [
+    "M_OilPan",
+    "M_Cutaway"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 28,
+   "type": "MESH",
+   "verts": 16
+  },
+  "Piston_01": {
+   "dims": [
+    0.0786,
+    0.0786,
+    0.055
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.17075
+   ],
+   "materials": [
+    "M_Aluminium"
+   ],
+   "parent": "Cylinder_01",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 1048,
+   "type": "MESH",
+   "verts": 530
+  },
+  "Piston_02": {
+   "dims": [
+    0.0786,
+    0.0786,
+    0.055
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.08925
+   ],
+   "materials": [
+    "M_Aluminium"
+   ],
+   "parent": "Cylinder_02",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 1048,
+   "type": "MESH",
+   "verts": 530
+  },
+  "Piston_03": {
+   "dims": [
+    0.0786,
+    0.0786,
+    0.055
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.08925
+   ],
+   "materials": [
+    "M_Aluminium"
+   ],
+   "parent": "Cylinder_03",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 1048,
+   "type": "MESH",
+   "verts": 530
+  },
+  "Piston_04": {
+   "dims": [
+    0.0786,
+    0.0786,
+    0.055
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.17075
+   ],
+   "materials": [
+    "M_Aluminium"
+   ],
+   "parent": "Cylinder_04",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 1048,
+   "type": "MESH",
+   "verts": 530
+  },
+  "Piston_Pin_01": {
+   "dims": [
+    0.064,
+    0.019,
+    0.019
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Piston_01",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 128,
+   "type": "MESH",
+   "verts": 64
+  },
+  "Piston_Pin_02": {
+   "dims": [
+    0.064,
+    0.019,
+    0.019
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Piston_02",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 128,
+   "type": "MESH",
+   "verts": 64
+  },
+  "Piston_Pin_03": {
+   "dims": [
+    0.064,
+    0.019,
+    0.019
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Piston_03",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 128,
+   "type": "MESH",
+   "verts": 64
+  },
+  "Piston_Pin_04": {
+   "dims": [
+    0.064,
+    0.019,
+    0.019
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Piston_04",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 128,
+   "type": "MESH",
+   "verts": 64
+  },
+  "Spark_Plug_01": {
+   "dims": [
+    0.021,
+    0.021,
+    0.081
+   ],
+   "location": [
+    -0.132,
+    0.0,
+    0.24575
+   ],
+   "materials": [
+    "M_Ceramic"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Spark_Plug_02": {
+   "dims": [
+    0.021,
+    0.021,
+    0.081
+   ],
+   "location": [
+    -0.044,
+    0.0,
+    0.24575
+   ],
+   "materials": [
+    "M_Ceramic"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Spark_Plug_03": {
+   "dims": [
+    0.021,
+    0.021,
+    0.081
+   ],
+   "location": [
+    0.044,
+    0.0,
+    0.24575
+   ],
+   "materials": [
+    "M_Ceramic"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Spark_Plug_04": {
+   "dims": [
+    0.021,
+    0.021,
+    0.081
+   ],
+   "location": [
+    0.132,
+    0.0,
+    0.24575
+   ],
+   "materials": [
+    "M_Ceramic"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Stationary_Assembly": {
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "parent": "InlineFour_Root",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "type": "EMPTY"
+  },
+  "Tappet_Exhaust_01A": {
+   "dims": [
+    0.03,
+    0.0326,
+    0.02129
+   ],
+   "location": [
+    -0.1485,
+    -0.04029,
+    0.29318
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Tappet_Exhaust_01B": {
+   "dims": [
+    0.03,
+    0.0326,
+    0.02129
+   ],
+   "location": [
+    -0.1155,
+    -0.04029,
+    0.29318
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Tappet_Exhaust_02A": {
+   "dims": [
+    0.03,
+    0.0326,
+    0.02129
+   ],
+   "location": [
+    -0.0605,
+    -0.03888,
+    0.28792
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Tappet_Exhaust_02B": {
+   "dims": [
+    0.03,
+    0.0326,
+    0.02129
+   ],
+   "location": [
+    -0.0275,
+    -0.03888,
+    0.28792
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Tappet_Exhaust_03A": {
+   "dims": [
+    0.03,
+    0.0326,
+    0.02129
+   ],
+   "location": [
+    0.0275,
+    -0.04029,
+    0.29318
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Tappet_Exhaust_03B": {
+   "dims": [
+    0.03,
+    0.0326,
+    0.02129
+   ],
+   "location": [
+    0.0605,
+    -0.04029,
+    0.29318
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Tappet_Exhaust_04A": {
+   "dims": [
+    0.03,
+    0.0326,
+    0.02129
+   ],
+   "location": [
+    0.1155,
+    -0.03972,
+    0.29104
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Tappet_Exhaust_04B": {
+   "dims": [
+    0.03,
+    0.0326,
+    0.02129
+   ],
+   "location": [
+    0.1485,
+    -0.03972,
+    0.29104
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Tappet_Intake_01A": {
+   "dims": [
+    0.03,
+    0.0326,
+    0.02129
+   ],
+   "location": [
+    -0.1485,
+    0.04029,
+    0.29318
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Tappet_Intake_01B": {
+   "dims": [
+    0.03,
+    0.0326,
+    0.02129
+   ],
+   "location": [
+    -0.1155,
+    0.04029,
+    0.29318
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Tappet_Intake_02A": {
+   "dims": [
+    0.03,
+    0.0326,
+    0.02129
+   ],
+   "location": [
+    -0.0605,
+    0.04029,
+    0.29318
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Tappet_Intake_02B": {
+   "dims": [
+    0.03,
+    0.0326,
+    0.02129
+   ],
+   "location": [
+    -0.0275,
+    0.04029,
+    0.29318
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Tappet_Intake_03A": {
+   "dims": [
+    0.03,
+    0.0326,
+    0.02129
+   ],
+   "location": [
+    0.0275,
+    0.03888,
+    0.28792
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Tappet_Intake_03B": {
+   "dims": [
+    0.03,
+    0.0326,
+    0.02129
+   ],
+   "location": [
+    0.0605,
+    0.03888,
+    0.28792
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Tappet_Intake_04A": {
+   "dims": [
+    0.03,
+    0.0326,
+    0.02129
+   ],
+   "location": [
+    0.1155,
+    0.03972,
+    0.29104
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Tappet_Intake_04B": {
+   "dims": [
+    0.03,
+    0.0326,
+    0.02129
+   ],
+   "location": [
+    0.1485,
+    0.03972,
+    0.29104
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Timing_Belt": {
+   "dims": [
+    0.011,
+    0.19049,
+    0.3909
+   ],
+   "location": [
+    0.229,
+    0.0,
+    0.16895
+   ],
+   "materials": [
+    "M_Rubber"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 408,
+   "type": "MESH",
+   "verts": 204
+  },
+  "Valve_Cover": {
+   "dims": [
+    0.42,
+    0.03085,
+    0.06
+   ],
+   "location": [
+    0.0,
+    0.0,
+    0.35625
+   ],
+   "materials": [
+    "M_ValveCover",
+    "M_Cutaway"
+   ],
+   "parent": "Stationary_Assembly",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 28,
+   "type": "MESH",
+   "verts": 16
+  },
+  "Valve_Exhaust_01A": {
+   "dims": [
+    0.025,
+    0.03885,
+    0.09379
+   ],
+   "location": [
+    -0.1485,
+    -0.02435,
+    0.24991
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Valve_Exhaust_01B": {
+   "dims": [
+    0.025,
+    0.03885,
+    0.09379
+   ],
+   "location": [
+    -0.1155,
+    -0.02435,
+    0.24991
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Valve_Exhaust_02A": {
+   "dims": [
+    0.025,
+    0.03885,
+    0.09379
+   ],
+   "location": [
+    -0.0605,
+    -0.02294,
+    0.24464
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Valve_Exhaust_02B": {
+   "dims": [
+    0.025,
+    0.03885,
+    0.09379
+   ],
+   "location": [
+    -0.0275,
+    -0.02294,
+    0.24464
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Valve_Exhaust_03A": {
+   "dims": [
+    0.025,
+    0.03885,
+    0.09379
+   ],
+   "location": [
+    0.0275,
+    -0.02435,
+    0.24991
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Valve_Exhaust_03B": {
+   "dims": [
+    0.025,
+    0.03885,
+    0.09379
+   ],
+   "location": [
+    0.0605,
+    -0.02435,
+    0.24991
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Valve_Exhaust_04A": {
+   "dims": [
+    0.025,
+    0.03885,
+    0.09379
+   ],
+   "location": [
+    0.1155,
+    -0.02378,
+    0.24777
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Valve_Exhaust_04B": {
+   "dims": [
+    0.025,
+    0.03885,
+    0.09379
+   ],
+   "location": [
+    0.1485,
+    -0.02378,
+    0.24777
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Valve_Intake_01A": {
+   "dims": [
+    0.029,
+    0.04078,
+    0.09431
+   ],
+   "location": [
+    -0.1485,
+    0.02338,
+    0.24965
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Valve_Intake_01B": {
+   "dims": [
+    0.029,
+    0.04078,
+    0.09431
+   ],
+   "location": [
+    -0.1155,
+    0.02338,
+    0.24965
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Valve_Intake_02A": {
+   "dims": [
+    0.029,
+    0.04078,
+    0.09431
+   ],
+   "location": [
+    -0.0605,
+    0.02338,
+    0.24965
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Valve_Intake_02B": {
+   "dims": [
+    0.029,
+    0.04078,
+    0.09431
+   ],
+   "location": [
+    -0.0275,
+    0.02338,
+    0.24965
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Valve_Intake_03A": {
+   "dims": [
+    0.029,
+    0.04078,
+    0.09431
+   ],
+   "location": [
+    0.0275,
+    0.02197,
+    0.24439
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Valve_Intake_03B": {
+   "dims": [
+    0.029,
+    0.04078,
+    0.09431
+   ],
+   "location": [
+    0.0605,
+    0.02197,
+    0.24439
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Valve_Intake_04A": {
+   "dims": [
+    0.029,
+    0.04078,
+    0.09431
+   ],
+   "location": [
+    0.1155,
+    0.02281,
+    0.24751
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Valve_Intake_04B": {
+   "dims": [
+    0.029,
+    0.04078,
+    0.09431
+   ],
+   "location": [
+    0.1485,
+    0.02281,
+    0.24751
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 192,
+   "type": "MESH",
+   "verts": 98
+  },
+  "Valve_Spring_Exhaust_01A": {
+   "dims": [
+    0.0256,
+    0.03237,
+    0.03972
+   ],
+   "location": [
+    -0.1485,
+    -0.03356,
+    0.26807
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 488,
+   "type": "MESH",
+   "verts": 246
+  },
+  "Valve_Spring_Exhaust_01B": {
+   "dims": [
+    0.0256,
+    0.03237,
+    0.03972
+   ],
+   "location": [
+    -0.1155,
+    -0.03356,
+    0.26807
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 488,
+   "type": "MESH",
+   "verts": 246
+  },
+  "Valve_Spring_Exhaust_02A": {
+   "dims": [
+    0.0256,
+    0.0311,
+    0.03445
+   ],
+   "location": [
+    -0.0605,
+    -0.03286,
+    0.26544
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 488,
+   "type": "MESH",
+   "verts": 246
+  },
+  "Valve_Spring_Exhaust_02B": {
+   "dims": [
+    0.0256,
+    0.0311,
+    0.03445
+   ],
+   "location": [
+    -0.0275,
+    -0.03286,
+    0.26544
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 488,
+   "type": "MESH",
+   "verts": 246
+  },
+  "Valve_Spring_Exhaust_03A": {
+   "dims": [
+    0.0256,
+    0.03237,
+    0.03972
+   ],
+   "location": [
+    0.0275,
+    -0.03356,
+    0.26807
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 488,
+   "type": "MESH",
+   "verts": 246
+  },
+  "Valve_Spring_Exhaust_03B": {
+   "dims": [
+    0.0256,
+    0.03237,
+    0.03972
+   ],
+   "location": [
+    0.0605,
+    -0.03356,
+    0.26807
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 488,
+   "type": "MESH",
+   "verts": 246
+  },
+  "Valve_Spring_Exhaust_04A": {
+   "dims": [
+    0.0256,
+    0.03185,
+    0.03757
+   ],
+   "location": [
+    0.1155,
+    -0.03328,
+    0.267
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 488,
+   "type": "MESH",
+   "verts": 246
+  },
+  "Valve_Spring_Exhaust_04B": {
+   "dims": [
+    0.0256,
+    0.03185,
+    0.03757
+   ],
+   "location": [
+    0.1485,
+    -0.03328,
+    0.267
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 488,
+   "type": "MESH",
+   "verts": 246
+  },
+  "Valve_Spring_Intake_01A": {
+   "dims": [
+    0.0256,
+    0.02991,
+    0.0419
+   ],
+   "location": [
+    -0.1485,
+    0.03356,
+    0.26807
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 488,
+   "type": "MESH",
+   "verts": 246
+  },
+  "Valve_Spring_Intake_01B": {
+   "dims": [
+    0.0256,
+    0.02991,
+    0.0419
+   ],
+   "location": [
+    -0.1155,
+    0.03356,
+    0.26807
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 488,
+   "type": "MESH",
+   "verts": 246
+  },
+  "Valve_Spring_Intake_02A": {
+   "dims": [
+    0.0256,
+    0.02991,
+    0.0419
+   ],
+   "location": [
+    -0.0605,
+    0.03356,
+    0.26807
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 488,
+   "type": "MESH",
+   "verts": 246
+  },
+  "Valve_Spring_Intake_02B": {
+   "dims": [
+    0.0256,
+    0.02991,
+    0.0419
+   ],
+   "location": [
+    -0.0275,
+    0.03356,
+    0.26807
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 488,
+   "type": "MESH",
+   "verts": 246
+  },
+  "Valve_Spring_Intake_03A": {
+   "dims": [
+    0.0256,
+    0.02899,
+    0.03717
+   ],
+   "location": [
+    0.0275,
+    0.03286,
+    0.26544
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 488,
+   "type": "MESH",
+   "verts": 246
+  },
+  "Valve_Spring_Intake_03B": {
+   "dims": [
+    0.0256,
+    0.02899,
+    0.03717
+   ],
+   "location": [
+    0.0605,
+    0.03286,
+    0.26544
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 488,
+   "type": "MESH",
+   "verts": 246
+  },
+  "Valve_Spring_Intake_04A": {
+   "dims": [
+    0.0256,
+    0.02954,
+    0.03997
+   ],
+   "location": [
+    0.1155,
+    0.03328,
+    0.267
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 488,
+   "type": "MESH",
+   "verts": 246
+  },
+  "Valve_Spring_Intake_04B": {
+   "dims": [
+    0.0256,
+    0.02954,
+    0.03997
+   ],
+   "location": [
+    0.1485,
+    0.03328,
+    0.267
+   ],
+   "materials": [
+    "M_Steel"
+   ],
+   "parent": "Valvetrain",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "tris": 488,
+   "type": "MESH",
+   "verts": 246
+  },
+  "Valvetrain": {
+   "location": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "parent": "InlineFour_Root",
+   "rotation": [
+    0.0,
+    0.0,
+    0.0
+   ],
+   "scale": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "type": "EMPTY"
+  }
+ },
+ "stats": {
+  "materials": [
+   "M_Aluminium",
+   "M_CastIron",
+   "M_Ceramic",
+   "M_Cutaway",
+   "M_OilPan",
+   "M_Rubber",
+   "M_Steel",
+   "M_ValveCover"
+  ],
+  "parts": 76,
+  "triangles": 33800
+ }
+}

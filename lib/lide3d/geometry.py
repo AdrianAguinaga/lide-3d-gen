@@ -58,3 +58,38 @@ def loft(bm, rings_pts, cap=True):
         m = len(a)
         for i in range(m):
             bm.faces.new((a[i], a[(i + 1) % m], b[(i + 1) % m], b[i]))
+
+
+def hull2d(pts):
+    """Convex hull (CCW) of 2D points; monotone chain."""
+    pts = sorted(set(pts))
+    if len(pts) < 3:
+        return pts
+    cross = lambda o, a, b: (a[0] - o[0]) * (b[1] - o[1]) - (a[1] - o[1]) * (b[0] - o[0])
+    lo, hi = [], []
+    for p in pts:
+        while len(lo) >= 2 and cross(lo[-2], lo[-1], p) <= 0:
+            lo.pop()
+        lo.append(p)
+    for p in reversed(pts):
+        while len(hi) >= 2 and cross(hi[-2], hi[-1], p) <= 0:
+            hi.pop()
+        hi.append(p)
+    return lo[:-1] + hi[:-1]
+
+
+def coil(bm, r, wire_r, z0, z1, turns, steps=10, sides=6, M=I4):
+    """Helical spring around local Z (closed tube, capped)."""
+    n = int(turns * steps) + 1
+    rings = []
+    for i in range(n):
+        a = 2 * pi * i / steps
+        z = z0 + (z1 - z0) * i / (n - 1)
+        c, rad = Vector((r * cos(a), r * sin(a), z)), Vector((cos(a), sin(a), 0))
+        rings.append([bm.verts.new(M @ (c + wire_r * (cos(2 * pi * k / sides) * rad + sin(2 * pi * k / sides) * Vector((0, 0, 1)))))
+                      for k in range(sides)])
+    bm.faces.new(list(reversed(rings[0])))
+    bm.faces.new(rings[-1])
+    for a, b in zip(rings, rings[1:]):
+        for k in range(sides):
+            bm.faces.new((a[k], a[(k + 1) % sides], b[(k + 1) % sides], b[k]))

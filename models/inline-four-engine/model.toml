@@ -1,0 +1,23 @@
+name = "InlineFour"
+description = "Educational cutaway of a generic 1.6 L inline-4, DOHC 16 valves. Block, head, valve cover and oil pan are sectioned (red faces); moving parts are whole, separate objects with pivots for animation and exploded views. Illustrative dimensions, not a real engine."
+source = "procedural"
+units = "m"
+
+[unity]
+tri_budget = 80000
+max_materials = 8
+
+[rig]
+# Exported pose: crank angle 0 = cylinder 1 at TDC of compression. Crank axis = Blender X (Unity X).
+bore = 0.079
+stroke = 0.0815
+rod_length = 0.130
+firing_order = [1, 3, 4, 2]
+crank_throw_deg = [0, 180, 180, 0]   # per cylinder, at the exported pose
+crank = "Crank_Assembly"             # rotate about local X; origin on the crank axis
+pistons = "Piston_0N"                # translate along local up: pin height = r*cos(t) + sqrt(L^2 - (r*sin(t))^2)
+conrods = "Conrod_0N"                # child of piston, origin at the pin: rotate about X by asin(r*sin(t)/L) (sign to verify in Unity)
+camshafts = ["Camshaft_Intake", "Camshaft_Exhaust"]  # rotate about X at half crank speed
+# Valves lean 15 deg outwards (pent roof); at this pose each valve is already displaced by its cam lift.
+# Valve lift = flat-tappet support function of the cam lobe (build.py tappet_lift; Unity: LideEngineKinematics).
+# Unity: add unity/Runtime/LideEngineKinematics.cs (animation) and LideExplode.cs (exploded view) to InlineFour_Root.
